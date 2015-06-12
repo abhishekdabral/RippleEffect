@@ -35,6 +35,21 @@ public class RippleView extends View {
         this.mParent = mParent;
     }
 
+
+    private Paint.Style rippleType = Paint.Style.FILL;
+
+    public Paint.Style getRippleType() {
+        return rippleType;
+    }
+
+    /**
+     * Called to create different type of ripples
+     * @param rippleType : Paint.Style.FILL , Paint.Style.FILL, Paint.Style.FILL_AND_STROKE
+     */
+    public void setRippleType(Paint.Style rippleType) {
+        this.rippleType = rippleType;
+    }
+
     /**
      * Called to get ripple speed
      * @return : ripple speed
@@ -70,7 +85,7 @@ public class RippleView extends View {
     /**
      * Ripple effect duration ;default set to 2000ms
      */
-    private static int RIPPLE_DURATION = 2000;
+    private static int RIPPLE_DURATION = 1200;
 
     public int getRippleDuration() {
         return RIPPLE_DURATION;
@@ -137,7 +152,7 @@ public class RippleView extends View {
         super.onDraw(canvas);
         Paint paint = new Paint();
         paint.setStrokeWidth(rippleStrokeWidth);
-        paint.setStyle(Paint.Style.STROKE);
+        paint.setStyle(rippleType);
         paint.setColor(rippleStrokeColor);
         canvas.drawCircle(centerX, centerY, radius, paint);
 

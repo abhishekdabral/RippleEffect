@@ -1,6 +1,5 @@
 package example.com.imageextract;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity{
                 Log.d(TAG, "Show RIpple" + mGroup.getChildCount());
                 RippleView rippleView = new RippleView(MainActivity.this);
 
-                rippleView.setRippleStrokeColor(Color.BLUE);
+                rippleView.setRippleStrokeColor(getResources().getColor(R.color.smoke_white));
 //                rippleView.setRippleStrokeWidth(5);
 //                rippleView.setRippleDuration(500);
 //                rippleView.setRippleVelocity(10);
