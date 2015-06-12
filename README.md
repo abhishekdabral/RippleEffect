@@ -14,4 +14,4 @@ All you need to Creaete RippleView instance and called its init method to acheiv
 
 
 Here you can see the effect        
-![Ripple Effect Demo](https://github.com/abhishekdabral/RippleEffect/blob/master/ripple_demo.mp4 "Ripple Effect")
+![Ripple Effect Demo](https://github.com/abhishekdabral/RippleEffect/blob/master/demo.gif "Ripple Effect")
